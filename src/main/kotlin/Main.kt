@@ -1,7 +1,20 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun noParam(out: () -> String) = println(out())
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun adds(sum: (Int, Int) -> Int, x:Int, y:Int): Int {
+    return sum(x, y)
+}
+
+fun multi(mul: (Int, Int) -> Int ,x:Int, y:Int):Int {
+    return mul(x, y)
+}
+fun main() {
+
+    val x: Int = 15
+    val y = 20
+    val result:Int = adds({a, b -> a + b}, 15, 20)
+
+    val result2: Int = multi({x, y -> x * y}, x, y)
+
+    println("result: $result, result2: $result2")
+
 }
