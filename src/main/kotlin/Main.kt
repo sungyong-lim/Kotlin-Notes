@@ -15,6 +15,5 @@ fun main() {
 
     val result2: Int = multi({x, y -> x * y}, x, y)
 
-    println("result: $result, result2: $result2")
 
 }
