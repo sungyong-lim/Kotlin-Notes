@@ -29,6 +29,7 @@ class Parrot : Bird {
     // override 로 fly 메서드 재설계
     override fun fly() {
         println("Slow Fly")
+        super.fly() // 상위 클래스의 fly() 메서드 실행
     }
 
 }
