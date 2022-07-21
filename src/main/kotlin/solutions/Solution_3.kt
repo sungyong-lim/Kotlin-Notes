@@ -26,7 +26,7 @@ fun main() {
 
 
 
-fun solution(star: Int) {
+private fun solution(star: Int) {
     var cnt = 1
 
     for(i in 1..star) {

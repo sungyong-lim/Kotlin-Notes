@@ -10,7 +10,7 @@ fun main() {
     println(result2) //[5, false]
 }
 
-fun solution(str: String) : ArrayList<String> {
+private fun solution(str: String) : ArrayList<String> {
 
     // 내가 푼 방식
     /*

@@ -29,7 +29,7 @@ fun main() {
 
 }
 
-fun solution(emailList: ArrayList<String>) : Map<String, Int> {
+private fun solution(emailList: ArrayList<String>) : Map<String, Int> {
 
     var mapList = mutableMapOf<String, Int>()
     var naverCount = 0
