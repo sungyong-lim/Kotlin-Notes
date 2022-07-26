@@ -29,4 +29,7 @@ fun main() {
     println("-----")
     println("filtered : ${lazyMap2.toList()}")
 
+    val containsFilter = decorations.filter { it.contains('p') }
+    println(containsFilter)
+
 }
